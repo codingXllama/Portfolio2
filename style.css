@@ -8,14 +8,32 @@ body{
     margin:0;
     padding:0;
     box-sizing: border-box;
+    overflow: hidden;
+}
+
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img img{
+    height: 20vh;
+    /* border:1px solid red; */
+    margin-top:10rem;
+    border-radius: 20px;
 }
 
 .intro{
+    
+    /* border:1px solid red; */
     display:flex;
     color:white;
-    min-height: 100vh;
+    margin-top:0vh;
+    min-height: 10vh;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
+
     
 }
 
@@ -24,6 +42,7 @@ body{
    margin-right:20px;
    
 }
+
 
 #the{
     margin-right: 20px;
@@ -52,4 +71,37 @@ body{
     100%{
         opacity: 1;
     }
+}
+
+
+/* Styling fonts */
+.content{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.content a{
+    /* border: 1px solid black; */
+    margin:0 15px;
+    text-decoration: none;
+    background:none;
+
+    /* all:unset; */
+
+}
+
+.content #github{
+    color: rgb(0, 0, 0);;
+}
+
+
+.content #resume{
+    color: rgba(75, 240, 25, 0.575);;
+}
+
+.content #linken{
+    color: rgba(28, 40, 218, 0.658);;
 }
