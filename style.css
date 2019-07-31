@@ -13,5 +13,43 @@ body{
 .intro{
     display:flex;
     color:white;
-    height: 100vh;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.intro #introTitle{
+   color:rgb(0, 178, 223);
+   margin-right:20px;
+   
+}
+
+#the{
+    margin-right: 20px;
+    color:rgba(74, 241, 110, 0.61);
+}
+
+.typing{
+    position: relative;
+    /* margin-left:10px; */
+}
+
+.typing::after{
+    content:"";
+    position: absolute;
+    right:-5px;
+    width:3px;
+    height: 40px;
+    border-right:2px solid rgb(12, 140, 245);
+    animation: flash 0.5s infinite ease-in-out;
+}
+
+@keyframes flash{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
