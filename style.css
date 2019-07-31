@@ -9,6 +9,7 @@ body{
     padding:0;
     box-sizing: border-box;
     overflow: hidden;
+    outline:none;
 }
 
 .img{
@@ -22,6 +23,7 @@ body{
     /* border:1px solid red; */
     margin-top:10rem;
     border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .intro{
@@ -33,6 +35,7 @@ body{
     min-height: 10vh;
     align-items: center;
     justify-content:center;
+    outline:none;
 
     
 }
@@ -74,7 +77,7 @@ body{
 }
 
 
-/* Styling fonts */
+/* Styling ICONS */
 .content{
     /* border: 1px solid red; */
     display: flex;
@@ -104,4 +107,36 @@ body{
 
 .content #linken{
     color: rgba(28, 40, 218, 0.658);;
+}
+
+/* Styling Buttons  */
+.boxes{
+  
+/* border:1px solid red; */
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top:2rem;
+float: center;
+padding:1px;
+}
+
+.boxes button{
+    padding: 0.5rem 1rem;
+    border:none;
+    color:#ffff;
+    background:#333;
+    margin:0 0.5rem;
+    outline: none;
+    font-size:1.25rem;
+    border-radius: 10px;
+    text-transform: capitalize;
+
+}
+
+.boxes button:hover{
+    background:#ffff;
+    color:#333;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.082), 0 6px 20px 0 rgba(0, 0, 0, 0.034);
+
 }
