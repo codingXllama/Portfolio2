@@ -1,14 +1,14 @@
 body{
 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: linear-gradient(rgba(29, 29, 29, 0.808),rgba(0,0,0,0.5)),url(/bg3.jpg);
+    background: linear-gradient(rgba(29, 29, 29, 0.5),rgba(0,0,0,0.5)),url(/bg3.jpg);
     background-size: cover;
     background-position: center;
     min-height: 100vh;
     margin:0;
     padding:0;
     box-sizing: border-box;
-    /* overflow: hidden; */
+    overflow: hidden;
     outline:none;
 }
 
@@ -17,6 +17,7 @@ body{
     align-items: center;
     justify-content: center;
     
+    
    
 }
 
@@ -24,8 +25,10 @@ body{
     /* height: auto; */
     max-width: 240px;
     margin-top:10rem;
-    border-radius: 5%;
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.603); */
+    border-radius: 10px;
+   
+    box-shadow: 0 4px 2px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.603);
+    
 }
 
 .intro{
@@ -67,7 +70,7 @@ body{
     right:-5px;
     width:3px;
     height: 40px;
-    border-right:2px solid rgb(29, 1, 1);
+    border-right:2px solid rgb(7, 7, 7);
     animation: flash 0.5s infinite ease-in-out;
     /* cursor: pointer; */
 }
@@ -88,7 +91,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 15rem;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    /* margin-right: 15rem; */
 
 }
 
@@ -131,9 +136,10 @@ body{
 display: flex;
 align-items: center;
 justify-content: center;
-margin-top:2rem;
+margin-top:1.2rem;
+/* margin-left:15rem; */
 float: center;
-padding:1px;
+padding:0;
 }
 
 
@@ -141,7 +147,7 @@ padding:1px;
     padding: 0.5rem 1rem;
     border:none;
     color:#ffff;
-    background:#0078FF;
+    background:rgb(0, 0, 0);
     margin:0 0.5rem;
     outline: none;
     font-size:1.25rem;
@@ -243,3 +249,5 @@ padding:1px;
     border-left: 26px solid  #0078FF;
     border-bottom: 13px solid transparent;
 } 
+
+
