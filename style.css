@@ -34,10 +34,11 @@ body{
     display:flex;
     color:white;
     margin-top:0vh;
-    min-height: 10vh;
+    min-height: 1vh;
     align-items: center;
     justify-content:center;
     outline:none;
+    min-width: 240px;
 
     
 }
@@ -87,6 +88,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 15rem;
 
 }
 
@@ -103,14 +105,23 @@ body{
 .content #github{
     color: rgb(0, 0, 0);;
 }
+.content #github:hover{
+    color: rgb(253, 253, 253);
+}
 
 
 .content #resume{
-    color: rgba(75, 240, 25, 0.575);;
+    color: rgba(72, 228, 25, 0.781);;
 }
 
+.content #resume:hover{
+    color: rgba(43, 255, 1, 0.945);;
+}
 .content #linken{
-    color: rgba(28, 40, 218, 0.658);;
+    color: rgba(6, 85, 189, 0.938);;
+}
+.content #linken:hover{
+    color: rgb(1, 111, 255);;
 }
 
 /* Styling Buttons  */
@@ -130,7 +141,7 @@ padding:1px;
     padding: 0.5rem 1rem;
     border:none;
     color:#ffff;
-    background:#333;
+    background:#0078FF;
     margin:0 0.5rem;
     outline: none;
     font-size:1.25rem;
@@ -146,50 +157,55 @@ padding:1px;
 
 }
 
-.bubble{
-    /* border:1px solid red; */
-    background: #00aabb;
-    border-radius: .3em;
-    padding: 0 1.2rem;
-}
-
-.bubble:after{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    content: '';
-    position: absolute;
-    top: 23rem;
-    /* left: 50%; */
-    width: 0;
-    height: 0;
-    border: 20px solid transparent;
-    border-bottom-color: #00aabb;
-    border-top:0;
-    border-left: 0;
-}
 
 /* New bubble 1 */
-.speech{
+.speech1{
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
     /* font-size: 1.1em; */
-    background:#41b2ce;
+    background:#0078FF;
     color:#ffff;
     border-radius: 10px;
-    padding:0.2rem 1rem;
-    max-width: 400px;
+    padding:0.25rem 1rem;
+    max-width: 500px;
     margin-top:1rem;
 }
+
+
+.speech2{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 1.1em; */
+    background:rgb(142, 142, 147);
+    color:#ffff;
+    border-radius: 10px;
+    padding:0.5rem .5rem;
+    max-width: 500px;
+    margin-top:1rem;
+}
+
+.speech3{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 1.1em; */
+    background:#0078FF;
+    color:#ffff;
+    border-radius: 10px;
+    padding:0.5rem .5rem;
+    max-width: 500px;
+    margin-top:1rem;
+}
+
 
 /* Creating the speech bubble tail */
 .topTail:after{
     /* Creating the SPEECH BUBBLE TRIANGLE */
     content: '';
-    border: 20px solid transparent;
+    border: 28px solid transparent;
     border-bottom-color: #41b2ce;
     border-top:10px;
-    border-left: 20px;
+    border-left: 2px;
+    
 
     /* POSITIONING the speech bubble triangle */
     position: absolute;
@@ -197,3 +213,33 @@ padding:1px;
     left:50%;
     margin-left: -20px;
 }
+
+
+.leftTail_1:after{
+    content: '';
+    /* Positioning the tail */
+    position: absolute;
+    left: 0;
+    width: 0;
+    top:50%;
+    margin-top: -10px;
+    margin-left: -20px;
+    border-top: 13px solid transparent;
+    border-right: 26px solid rgb(142, 142, 147);;
+    border-bottom: 13px solid transparent;
+}
+
+.rightTail_1:after{
+    content: '';
+
+    
+    /* Tail position */
+    position: absolute;
+    right:-20px;
+    top:20%;
+    margin-top:3px;
+    margin-right: 0px;
+    border-top: 15px solid transparent;
+    border-left: 26px solid  #0078FF;
+    border-bottom: 13px solid transparent;
+} 
