@@ -1,0 +1,274 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666666;
+  padding: 0;
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+}
+
+/* Styling profile img */
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img img {
+  max-width: 250px;
+  margin-top: 10rem;
+  border-radius: 10px;
+  height: 10rem;
+  box-shadow: 0 4px 2px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.603);
+}
+.intro {
+  display: flex;
+  color: white;
+  margin-top: 0vh;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  font-size: 1rem;
+  margin: 10px;
+}
+
+.intro #introTitle {
+  color: rgb(0, 178, 223);
+}
+
+#the {
+  /* margin-right: 20px; */
+  color: rgba(74, 241, 110, 0.61);
+}
+
+.typing {
+  margin-right: 10px;
+  position: relative;
+}
+
+.typing::after {
+  content: "";
+  /* display: inline; */
+  position: absolute;
+  right: -5px;
+  width: 3px;
+  height: 40px;
+  border-right: 2px solid rgb(7, 7, 7);
+  animation: flash 0.5s infinite ease-in-out;
+  /* cursor: pointer; */
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Styling ICONS */
+.icons {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  /* margin-right: 15rem; */
+}
+
+.icons a {
+  /* border: 1px solid black; */
+  margin: 0 15px;
+  text-decoration: none;
+  background: none;
+
+  /* all:unset; */
+}
+
+.icons #github {
+  color: rgb(0, 0, 0);
+}
+.icons #github:hover {
+  color: rgb(253, 253, 253);
+}
+
+.icons #resume {
+  color: rgba(72, 228, 25, 0.781);
+}
+
+.icons #resume:hover {
+  color: rgba(43, 255, 1, 0.945);
+}
+.icons #linken {
+  color: rgba(6, 85, 189, 0.938);
+}
+.icons #linken:hover {
+  color: rgb(1, 111, 255);
+}
+
+/* Styling Buttons  */
+.boxes {
+  /* border:1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.2rem;
+  /* margin-left:15rem; */
+  float: center;
+  padding: 0;
+}
+
+.boxes button {
+  padding: 0.5rem 1rem;
+  border: none;
+  color: #ffff;
+  background: rgb(0, 0, 0);
+  margin: 0 0.5rem;
+  outline: none;
+  font-size: 1.25rem;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+
+.boxes button:hover {
+  background: #ffff;
+  color: #333;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.082),
+    0 6px 20px 0 rgba(0, 0, 0, 0.034);
+}
+/*Styling the images  */
+
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4 {
+  background: linear-gradient(rgba(29, 29, 29, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/bg3.jpg);
+  /* opacity: 0.99; */
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* Creating parallax effect (fixed= parallax) */
+  background-attachment: fixed;
+
+  /* Removing parallax effect (scroll=normal) */
+}
+
+.pimg1 {
+  /* background-image: url("/bg1.jpg"); */
+  min-height: 100%;
+}
+
+.pimg2 {
+  /* background-image: url("/bg1.jpg"); */
+  min-height: 100px;
+}
+.pimg3 {
+  /* background-image: url("/bg1.jpg"); */
+  min-height: 100px;
+}
+
+.pimg4 {
+  min-height: 50px;
+}
+
+/* Styling the sections */
+.section {
+  text-align: center;
+  padding: 50px 80px;
+  min-height: 400px;
+}
+
+/* Dark and Light Section class */
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Styling the ptext border class */
+.ptext .border {
+  background-color: #111;
+  padding: 20px;
+  color: white;
+}
+
+.ptext .border.trans {
+  /* border: 1px solid red; */
+  background-color: transparent;
+}
+
+/* Setting media query */
+
+@media (max-width: 568px) {
+  .pimg1,
+  .pimg2,
+  .pimg3 {
+    background-attachment: scroll;
+  }
+
+  #introTitle {
+    display: inline-block;
+    color: rgb(0, 178, 223);
+    font-size: 1rem;
+    margin-left: 3rem;
+    position: relative;
+    white-space: nowrap;
+  }
+
+  h1#the {
+    font-size: 1.1rem;
+    color: rgba(74, 241, 110, 0.61);
+    white-space: nowrap;
+  }
+
+  .typing {
+    font-size: 1.1rem;
+    position: relative;
+    margin-right: 3rem;
+    padding-right: rem;
+    white-space: nowrap;
+  }
+
+  .typing::after {
+    content: "";
+    height: 30px;
+    /* margin-right: 0.1rem; */
+    border-right: 2px solid rgb(7, 7, 7);
+  }
+  .boxes button {
+    padding: 0.3rem 0.7rem;
+    border: none;
+    color: #ffff;
+    background: rgb(0, 0, 0);
+    margin: 0.2rem 0.3rem;
+    outline: none;
+    font-size: 1em;
+    border-radius: 5px;
+    text-transform: capitalize;
+    white-space: nowrap;
+  }
+}
