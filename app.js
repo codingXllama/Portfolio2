@@ -1,5 +1,5 @@
 // Creating the required elements
-const text= ['Developer','Problem Solver','Student'];
+const text= ['Developer','Problem Solver','Student','Engineer'];
 let counter=0;
 let index=0;
 let currentText = '';
