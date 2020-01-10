@@ -2,11 +2,11 @@ body,
 html {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif; /* background-size: cover; */
-  /* background-position: center; */
-  height: 100%;
-  /* min-height: 100vh; */
-  margin: 0;
-  padding: 0;
+  background-position: center;
+  /* height: 100%; */
+  min-height: 100vh;
+  /* margin: 0; */
+  /* padding: 0; */
   box-sizing: border-box;
   color: #666666;
   /* outline:none; */
@@ -32,7 +32,7 @@ html {
   background-repeat: no-repeat;
 }
 .pimg3 {
-  background-image: url(/bg3.jpg);
+  background-image: url(/0.jfif);
   min-height: 100%;
   border: 1px solid red;
   opacity: 1;
@@ -260,7 +260,7 @@ html {
   content: "";
 
   /* Tail position */
-  position: absolute;
+  position: relati;
   right: -20px;
   top: 20%;
   margin-top: 3px;
